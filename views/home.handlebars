@@ -1,1 +1,9 @@
-This is the home page
+<div>
+    {{#each people}}
+      <div id="{{id}}">
+        <h2>{{name}}</h2>
+        <p>{{email}}</p>
+        <p>{{skills}}</p>
+      <div>
+    {{/each}}
+</div>
