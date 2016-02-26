@@ -19,9 +19,10 @@ exports = module.exports = function (app) {
     })
   })
 
-  app.get('/create', function (req, res) {
-    res.render('create')
-  })
+  // app.get('/delete/', function (req, res) {
+  //   fs.readFile(dataPath, 'utf8', function (err, data) {
+  //   res.render('home')
+  // })
 
 }
 

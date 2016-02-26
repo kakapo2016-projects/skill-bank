@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify script.js -o bundle.js -t [ babelify --presets [ es2015 ] ]",
+    "build": "browserify ./src/index.js -o ./public/bundle.js",
     "server": "nodemon ./server/server.js",
     "start": "budo ./script.js -d ./ --serve bundle.js --live -- -t [ babelify --presets [ es2015 ] ]"
   },
@@ -31,6 +31,7 @@
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.5",
+    "jquery": "^2.2.1",
     "node-uuid": "^1.4.7",
     "nodemon": "^1.8.1",
     "path": "^0.12.7",

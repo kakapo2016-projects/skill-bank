@@ -1,9 +1,19 @@
 <div>
     {{#each people}}
       <div id="{{id}}">
-        <h2>{{name}}</h2>
+        <h2>{{name}}<span id="deletePerson">x</span></h2>
         <p>{{email}}</p>
-        <p>{{skills}}</p>
+        <div id="skillDiv">
+          {{#each skills.languages}}
+            <span class="languages skills">{{this}}<span class="delete">x<span></span>
+          {{/each}}
+          {{#each skills.technical}}
+            <span class="technical skills">{{this}}<span class="delete">x<span></span>
+          {{/each}}          
+          {{#each skills.locations}}
+            <span class="locations skills">{{this}}<span class="delete">x<span></span>
+          {{/each}}
+        </div>
       <div>
     {{/each}}
 </div>
