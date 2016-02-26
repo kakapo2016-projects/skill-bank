@@ -14,6 +14,7 @@ h2 {
 
 .deletePerson img {
   height: 30px;
+  cursor: pointer;
 }
 
 .delete {
@@ -40,6 +41,7 @@ h2 {
 
 .skills img {
   height: 13px;
+  cursor: pointer;
 }
 
 /* end of skill colors */
