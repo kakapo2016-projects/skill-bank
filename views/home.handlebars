@@ -19,24 +19,22 @@
     </div>
   </nav>
   <div>
-      {{#each people}}
-        <div >
-          <h2>{{name}}<span class="deletePerson" id="{{id}}">x</span></h2>
-          <p>{{email}}</p>
-          <div id="skillDiv">
-            {{#each skills.languages}}
-              <span class="languages skills">{{this}}<span class="delete">x<span></span>
-            {{/each}}
-            {{#each skills.technical}}
-              <span class="technical skills">{{this}}<span class="delete">x<span></span>
-            {{/each}}          
-            {{#each skills.locations}}
-              <span class="locations skills">{{this}}<span class="delete">x<span></span>
-            {{/each}}
-          </div>
-        <div>
-      {{/each}}
-    </div>
+    {{#each people}}
+      <div id="{{id}}" class="people">
+        <h2>{{name}}<span class="deletePerson" id="{{id}}"> <img src="http://megaicons.net/static/img/icons_sizes/8/178/512/editing-delete-icon.png"></span></h2>
+        <p>{{email}}</p>
+        <div id="skillDiv">
+          {{#each skills.languages}}
+            <span class="languages skills">{{this}}<span class="delete languages"> <img src="http://megaicons.net/static/img/icons_sizes/8/178/512/editing-delete-icon.png"></span></span>
+          {{/each}}
+          {{#each skills.technical}}
+            <span class="technical skills">{{this}}<span class="delete technical"> <img src="http://megaicons.net/static/img/icons_sizes/8/178/512/editing-delete-icon.png"></span></span>
+          {{/each}}
+          {{#each skills.locations}}
+            <span class="locations skills">{{this}}<span class="delete locations"> <img src="http://megaicons.net/static/img/icons_sizes/8/178/512/editing-delete-icon.png"></span></span>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </div>
-
-

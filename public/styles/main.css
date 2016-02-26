@@ -2,12 +2,52 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-span {
+/* skill colors */
+
+h2 {
+  margin: 0px 0px 0px 0px;
 }
-=======
+
+#deletePerson {
+  background-color: white;
+}
+
+#deletePerson img {
+  height: 25px;
+}
+
+.delete {
+  background-color: white;
+}
+
+.languages {
+  background-color: rgb(59, 232, 232);
+}
+
+.technical {
+  background-color: rgb(219, 89, 89);
+}
+
+.locations {
+  background-color: rgb(57, 190, 126);
+}
+
+.skills {
+  padding: 8px;
+  margin: 0px 8px 0px 0px;
+  border-radius: 5px;
+}
+
+img {
+  height: 13px;
+}
+
+/* end of skill colors */
 
 header {
-  border: 1.5px solid purple;
+  background-color: black;
+  /*border: 7px solid rgb(61, 238, 180);*/
+  color: white;
   height: 80px;
   text-align: center;
   padding-top: 20px;
@@ -15,10 +55,14 @@ header {
 }
 
 .container {
-  border: 1.5px solid red;
+  /*border: 1.5px solid red;*/
 }
 
 nav {
   padding-top: 15px;
-  border: 1.5px solid greenyellow;
+  /*border: 1.5px solid greenyellow;*/
+}
+
+.people {
+  margin: 40px 0px 40px 10px;
 }
