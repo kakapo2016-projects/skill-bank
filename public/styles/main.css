@@ -1,5 +1,24 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
 span {
+}
+=======
+
+header {
+  border: 1.5px solid purple;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.container {
+  border: 1.5px solid red;
+}
+
+nav {
+  padding-top: 15px;
+  border: 1.5px solid greenyellow;
 }
