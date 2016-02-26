@@ -28,15 +28,15 @@ exports = module.exports = function (app) {
       } else {
         var peopleDelete = JSON.parse(data)
         var personForRemoval = {}
-        console.log(peopleDelete)
+        // console.log(peopleDelete)
         var peopleDeletepeople = peopleDelete.people
         for (var i = 0; i < peopleDeletepeople.length; i++){
           if (peopleDeletepeople[i].id === id){
-            console.log("we are in iteration territory", i)
-            peopleDelete.people.splice[i]
+            // console.log("we are in iteration territory", i)
+            peopleDelete.people.splice(i, 1)
             console.log(peopleDelete)
             var objectForDB = JSON.stringify(peopleDelete)
-            console.log(typeof objectForDB, objectForDB)
+            // console.log(typeof objectForDB, objectForDB)
             fs.writeFile(dataPath, objectForDB, 'utf8', function(err){
                     if (err) {
         reject (err)
@@ -48,6 +48,9 @@ exports = module.exports = function (app) {
     res.render('home')
   })
 })
+
+
+  
 }
 
 
