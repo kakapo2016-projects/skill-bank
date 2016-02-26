@@ -21,7 +21,7 @@
   <div>
     {{#each people}}
       <div id="{{id}}" class="people">
-        <h2>{{name}}<span id="deletePerson"> <img src="http://megaicons.net/static/img/icons_sizes/8/178/512/editing-delete-icon.png"></span></h2>
+        <h2>{{name}}<span class="deletePerson" id="{{id}}"> <img src="http://megaicons.net/static/img/icons_sizes/8/178/512/editing-delete-icon.png"></span></h2>
         <p>{{email}}</p>
         <div id="skillDiv">
           {{#each skills.languages}}
