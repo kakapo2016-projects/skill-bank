@@ -20,8 +20,8 @@
   </nav>
   <div>
       {{#each people}}
-        <div id="{{id}}">
-          <h2>{{name}}<span id="deletePerson">x</span></h2>
+        <div >
+          <h2>{{name}}<span class="deletePerson" id="{{id}}">x</span></h2>
           <p>{{email}}</p>
           <div id="skillDiv">
             {{#each skills.languages}}

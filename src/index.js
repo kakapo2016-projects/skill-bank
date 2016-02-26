@@ -1,3 +1,3 @@
-var listen = require('./components/listen')
+var listenFunction = require('./components/listen.js')
 
-listen()
+listenFunction()

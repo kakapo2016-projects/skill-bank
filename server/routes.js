@@ -19,11 +19,35 @@ exports = module.exports = function (app) {
     })
   })
 
-  // app.get('/delete/', function (req, res) {
-  //   fs.readFile(dataPath, 'utf8', function (err, data) {
-  //   res.render('home')
-  // })
-
+  app.delete('/people/:id', function (req, res) {
+    // console.log("we are in routes")
+    var id = req.params.id
+    fs.readFile(dataPath, 'utf8', function (err, data) {
+      if (err) {
+        reject (err)
+      } else {
+        var peopleDelete = JSON.parse(data)
+        var personForRemoval = {}
+        console.log(peopleDelete)
+        var peopleDeletepeople = peopleDelete.people
+        for (var i = 0; i < peopleDeletepeople.length; i++){
+          if (peopleDeletepeople[i].id === id){
+            console.log("we are in iteration territory", i)
+            peopleDelete.people.splice[i]
+            console.log(peopleDelete)
+            var objectForDB = JSON.stringify(peopleDelete)
+            console.log(typeof objectForDB, objectForDB)
+            fs.writeFile(dataPath, objectForDB, 'utf8', function(err){
+                    if (err) {
+        reject (err)
+      } 
+            })
+          }
+        }
+      }
+    res.render('home')
+  })
+})
 }
 
 
